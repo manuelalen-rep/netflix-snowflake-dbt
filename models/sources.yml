@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: raw                
+    database: dev_netflix 
+    schema: public           
+    tables:
+      - name: netflix_raw   
