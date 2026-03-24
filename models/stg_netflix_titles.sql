@@ -20,7 +20,7 @@ SELECT
         TRY_TO_DATE(TRIM(date_added, ' "'), 'MON DD, YYYY'),
         TRY_TO_DATE(TRIM(date_added, ' "')) 
     ) as date_added_clean,
-    
+    COALESCE(DURATION_MINUTES, DURATION_SEASONS) as durantion_minutes_seasons,
     release_year,
     rating,
     listed_in as categories
